@@ -1,0 +1,13 @@
+cevaplar = {
+    "Naber":"İyiyim, sen?",
+    "Nasılsın":"Çok iyiyim"
+}
+while True:
+    yazı = input("Sen: ").capitalize()
+    if "çıkıyorum" in yazı:
+        print("Çıkış başladı!")
+        break
+    elif yazı in cevaplar:
+        print(cevaplar[yazı])
+    else:
+        print("Anladım, anlat!")
